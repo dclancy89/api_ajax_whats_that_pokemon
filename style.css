@@ -1,0 +1,42 @@
+.container {
+	max-width: 75rem;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+.col1, .col2 {
+	display: table-cell;
+}
+
+.col1 {
+	width: 65%;
+}
+
+.col2 {
+	width: 35%;
+}
+
+#pokedex {
+	position: fixed;
+	top: 2rem;
+	right: 10rem;
+	border: 20px solid red;
+	border-bottom: 40px solid red;
+	width: 200px;
+	height: 450px;
+}
+
+#pokedex h2 {
+	text-align: center;
+    text-transform: capitalize;
+}
+
+#pokedex img {
+	display: block;
+	margin: 0 auto;
+}
+
+#pokedex h5, #pokedex p {
+	margin-left: 1rem;
+}
