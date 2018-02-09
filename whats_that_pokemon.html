@@ -8,18 +8,18 @@
 	<script>
 		
 		$(document).ready(function() {
-			
+			// loads and displays the 151 pokemon
 			for(var i = 1; i <= 151; i++) {
 				var el = '<img src="http://pokeapi.co/media/img/' + i + '.png" data-num="' + i + '"" />';	
 				$('.col1').append(el);
 			}
 
-
+			// gets the data on the pokemon that was clicked on
 			$(document).on('click', 'img', function() {
 				var url = 'https://pokeapi.co/api/v2/pokemon/' + $(this).attr('data-num') + '/';
 				$.get(url, function(res) {
 
-
+					// build html element that goes inside pokedex
 					var el = '';
 					el += '<h2>' + res.forms[0].name + '</h2>';
 					el += '<img src="' + res.sprites.front_default + '" />'
